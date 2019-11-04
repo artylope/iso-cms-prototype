@@ -1,7 +1,7 @@
 $site-width: 350px;
 $site-height: 280px;
-$site-margin-horizontal: 15px;
-$site-margin-vertical: 15px;
+$site-margin-horizontal: 20px;
+$site-margin-vertical: 25px;
 $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
 
 @mixin single-site {
@@ -15,8 +15,6 @@ $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
 }
 
 .sites-container{
-  padding-top: 10px;
-  padding-bottom: 200px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -25,12 +23,12 @@ $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
   align-items: center;
 
   .page-title{
-    color: $title-color;
+    color: $isomer-blue;
     width: $sites-container-width;
     text-align: left;
-    margin-top: 20px;
     margin-bottom: 20px;
     margin-left: $site-margin-horizontal*2;
+    font-size: 48px;
   }
 
 
@@ -62,6 +60,9 @@ $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
           height: 210px;
           width: 100%;
           background: grey;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+
         }
 
         .site-description{
@@ -73,8 +74,22 @@ $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
 
       .create-new{
         @include single-site;
-        border: 1px dashed $dark-greyish-blue;
+        border: 1px dashed $isomer-blue;
         box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $isomer-blue;
+
+         .bx-plus-circle{
+           font-size: 30px;
+           margin-bottom: 20px;
+         }
+
+         h2{
+           font-size: 18px;
+         }
       }
 
     }

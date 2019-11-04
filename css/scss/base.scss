@@ -19,10 +19,19 @@ body{
 }
 
 .wrapper{
-  height: 100%;
+  height: calc(100vh - #{$header-height});
   width: 100%;
   top: $header-height;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  //first div to move upwards by 50px for visual balance
+  > div{
+    margin-top: -50px;
+  }
 }
 
 h1,h2,h3,h4,h5,h6{

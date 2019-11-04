@@ -15,10 +15,16 @@ body {
   z-index: 100; }
 
 .wrapper {
-  height: 100%;
+  height: calc(100vh - 80px);
   width: 100%;
   top: 80px;
-  position: relative; }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+  .wrapper > div {
+    margin-top: -50px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
@@ -30,8 +36,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 36px; }
 
 .sites-container {
-  padding-top: 10px;
-  padding-bottom: 200px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -39,19 +43,19 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center; }
   .sites-container .page-title {
-    color: #1B2E56;
-    width: 1140px;
+    color: #2B5FCE;
+    width: 1170px;
     text-align: left;
-    margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 30px; }
+    margin-left: 40px;
+    font-size: 48px; }
   .sites-container .sites {
     display: flex;
     flex-direction: rows;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 1140px; }
+    width: 1170px; }
     .sites-container .sites .site-container {
       box-sizing: border-box;
       display: flex;
@@ -59,10 +63,10 @@ h1, h2, h3, h4, h5, h6 {
       justify-content: center;
       align-items: center; }
       .sites-container .sites .site-container .site {
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         height: 280px;
         width: 350px;
         border-radius: 5px;
@@ -73,18 +77,30 @@ h1, h2, h3, h4, h5, h6 {
         .sites-container .sites .site-container .site .site-image {
           height: 210px;
           width: 100%;
-          background: grey; }
+          background: grey;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px; }
         .sites-container .sites .site-container .site .site-description {
           height: 90px;
           width: 100%;
           padding: 20px; }
       .sites-container .sites .site-container .create-new {
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         height: 280px;
         width: 350px;
         border-radius: 5px;
-        border: 1px dashed #1B2E56;
-        box-sizing: border-box; }
+        border: 1px dashed #2B5FCE;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #2B5FCE; }
+        .sites-container .sites .site-container .create-new .bx-plus-circle {
+          font-size: 30px;
+          margin-bottom: 20px; }
+        .sites-container .sites .site-container .create-new h2 {
+          font-size: 18px; }
