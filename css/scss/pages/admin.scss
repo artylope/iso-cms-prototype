@@ -1,3 +1,5 @@
+$sidebar-width: 260px;
+
 .admin-sidebar{
   width: 260px;
   background: white;
@@ -55,4 +57,14 @@
       }
     }
   }
+}
+
+.main-section{
+  width: calc(100vw - #{$sidebar-width});
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: $sidebar-width;
+  box-sizing: border-box;
+  padding: 60px;
 }

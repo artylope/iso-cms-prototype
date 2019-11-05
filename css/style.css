@@ -36,11 +36,9 @@ a {
   top: 80px;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-content: center; }
-  .wrapper > div {
-    margin-top: -30px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
@@ -48,11 +46,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
-.page-title {
-  font-size: 36px; }
+.section-title {
+  font-size: 36px;
+  color: #2B5FCE;
+  text-align: left;
+  width: 100%; }
 
 button {
-  padding: 10px;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   display: flex;
@@ -94,14 +94,11 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .sites-container .page-title {
-    color: #2B5FCE;
+  .sites-container .section-title {
     width: 1200px;
-    text-align: left;
     margin-bottom: 20px;
     margin-top: 10px;
-    margin-left: 40px;
-    font-size: 36px; }
+    margin-left: 40px; }
   .sites-container .sites {
     display: flex;
     flex-direction: rows;
@@ -213,3 +210,12 @@ button {
           border-left: 5px solid #2B5FCE; }
         .admin-sidebar .sidebar-navigation ul li.active {
           border-left: 5px solid #2B5FCE; }
+
+.main-section {
+  width: calc(100vw - 260px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 260px;
+  box-sizing: border-box;
+  padding: 60px; }

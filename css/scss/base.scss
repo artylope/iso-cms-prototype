@@ -49,14 +49,10 @@ a{
   top: $header-height;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
 
-  //first div to move upwards by 50px for visual balance
-  > div{
-    margin-top: -30px;
-  }
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -66,7 +62,10 @@ h1,h2,h3,h4,h5,h6{
   padding: 0;
 }
 
-.page-title{
+.section-title{
   font-size: 36px;
-
+  color: $isomer-blue;
+  text-align: left;
+  width: 100%;
+  
 }
