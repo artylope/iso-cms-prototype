@@ -48,6 +48,10 @@
         &:hover{
             border-left: 5px solid $isomer-blue;
         }
+
+        &.active{
+          border-left: 5px solid $isomer-blue;
+        }
       }
     }
   }

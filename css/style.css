@@ -211,3 +211,5 @@ button {
         margin-bottom: 5px; }
         .admin-sidebar .sidebar-navigation ul li:hover {
           border-left: 5px solid #2B5FCE; }
+        .admin-sidebar .sidebar-navigation ul li.active {
+          border-left: 5px solid #2B5FCE; }
