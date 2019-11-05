@@ -29,7 +29,6 @@ $sidebar-width: 260px;
     margin-top: 20px;
 
     ul{
-      list-style: none;
       width: 100%;
       box-sizing: border-box;
       list-style-position: outside;
@@ -62,9 +61,16 @@ $sidebar-width: 260px;
 .main-section{
   width: calc(100vw - #{$sidebar-width});
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   left: $sidebar-width;
   box-sizing: border-box;
-  padding: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+
+  .section-title{
+
+  }
 }
