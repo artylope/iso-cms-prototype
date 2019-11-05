@@ -1,6 +1,6 @@
-$site-width: 300px;
+$site-width: 360px;
 $site-height: 250px;
-$site-margin-horizontal: 15px;
+$site-margin-horizontal: 20px;
 $site-margin-vertical: 15px;
 $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
 
@@ -116,5 +116,10 @@ $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
 
     }
   }
+
+}
+
+
+@media (min-width: 1200px) {
 
 }
