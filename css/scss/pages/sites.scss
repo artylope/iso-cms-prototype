@@ -27,6 +27,7 @@ $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
     width: $sites-container-width;
     text-align: left;
     margin-bottom: 20px;
+    margin-top: 10px;
     margin-left: $site-margin-horizontal*2;
     font-size: 36px;
   }

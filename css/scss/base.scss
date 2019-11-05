@@ -9,6 +9,16 @@ body{
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+  color: $isomer-blue;
+
+  &:hover{
+    text-decoration: none;
+    color: $isomer-blue;
+  }
+}
+
 .header{
   position: fixed;
   height: $header-height;
