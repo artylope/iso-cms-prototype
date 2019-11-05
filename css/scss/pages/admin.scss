@@ -1,7 +1,7 @@
-$sidebar-width: 260px;
+$sidebar-width: 240px;
 
 .admin-sidebar{
-  width: 260px;
+  width: $sidebar-width;
   background: white;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
   margin: 0;
@@ -69,5 +69,6 @@ $sidebar-width: 260px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
+  overflow-y: scroll;
 
 }
