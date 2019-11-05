@@ -12,7 +12,16 @@ body {
   background: #fff;
   width: 100%;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-  z-index: 100; }
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .header .logo img {
+    width: 180px; }
 
 .wrapper {
   height: calc(100vh - 80px);
@@ -35,6 +44,19 @@ h1, h2, h3, h4, h5, h6 {
 .page-title {
   font-size: 36px; }
 
+button {
+  padding: 10px 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #2B5FCE;
+  color: white;
+  border: none; }
+
 .sites-container {
   width: 100%;
   box-sizing: border-box;
@@ -44,18 +66,18 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center; }
   .sites-container .page-title {
     color: #2B5FCE;
-    width: 1170px;
+    width: 990px;
     text-align: left;
     margin-bottom: 20px;
-    margin-left: 40px;
-    font-size: 48px; }
+    margin-left: 30px;
+    font-size: 36px; }
   .sites-container .sites {
     display: flex;
     flex-direction: rows;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 1170px; }
+    width: 990px; }
     .sites-container .sites .site-container {
       box-sizing: border-box;
       display: flex;
@@ -63,19 +85,20 @@ h1, h2, h3, h4, h5, h6 {
       justify-content: center;
       align-items: center; }
       .sites-container .sites .site-container .site {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        height: 280px;
-        width: 350px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 250px;
+        width: 300px;
         border-radius: 5px;
         background: white;
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
         border: none;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        transition: transform 0.2s ease-in; }
         .sites-container .sites .site-container .site .site-image {
-          height: 210px;
+          height: 180px;
           width: 100%;
           background: grey;
           border-top-left-radius: 5px;
@@ -84,13 +107,23 @@ h1, h2, h3, h4, h5, h6 {
           height: 90px;
           width: 100%;
           padding: 20px; }
+          .sites-container .sites .site-container .site .site-description .site-name {
+            font-size: .9em;
+            color: #333;
+            margin-bottom: 5px; }
+          .sites-container .sites .site-container .site .site-description .site-date {
+            font-weight: 300;
+            color: #878787;
+            font-size: .6em; }
+        .sites-container .sites .site-container .site:hover {
+          transform: translateY(-5px); }
       .sites-container .sites .site-container .create-new {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        height: 280px;
-        width: 350px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 250px;
+        width: 300px;
         border-radius: 5px;
         border: 1px dashed #2B5FCE;
         box-sizing: border-box;
@@ -104,3 +137,6 @@ h1, h2, h3, h4, h5, h6 {
           margin-bottom: 20px; }
         .sites-container .sites .site-container .create-new h2 {
           font-size: 18px; }
+        .sites-container .sites .site-container .create-new:hover {
+          background-color: white;
+          border: 1px solid #2B5FCE; }
