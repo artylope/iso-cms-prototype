@@ -78,3 +78,20 @@ h1,h2,h3,h4,h5,h6{
   color: $isomer-blue;
   text-align: left;
 }
+
+.page-editor-footer{
+  height: 80px;
+  background: white;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}

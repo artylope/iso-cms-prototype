@@ -1,0 +1,20 @@
+.input-group{
+    margin-bottom: 20px;
+}
+
+.form-label{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+input,textarea{
+  border-radius: 3px;
+  font-size: 14px;
+  color: $body-text;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  border:1px solid #cccccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
