@@ -30,19 +30,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
-.section-header {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin-top: 10px; }
-
-.section-title {
-  font-size: 28px;
-  color: #2B5FCE;
-  text-align: left; }
-
 .page-editor-footer {
   height: 80px;
   background: white;
@@ -156,6 +143,42 @@ input, textarea {
     display: flex;
     justify-content: flex-end;
     align-content: center; }
+
+.card {
+  width: 100%;
+  background: white;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-bottom: 30px; }
+  .card .card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .card .card-header h2 {
+      font-size: 20px;
+      font-weight: normal;
+      color: #19387a; }
+    .card .card-header .bx {
+      font-size: 30px;
+      color: #19387a; }
+  .card.dragging {
+    background: white;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2); }
+  .card.placeable {
+    background: none;
+    box-shadow: none;
+    border: 1px dashed #d1d8e6;
+    opacity: .8; }
+  .card.add-new {
+    background: none;
+    box-shadow: none;
+    border: 1px dashed #b0bcd4; }
+  .card .card-content {
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 /* width */
 /* width */
@@ -309,13 +332,14 @@ input, textarea {
         margin-top: 5px;
         margin-bottom: 5px; }
         .admin-sidebar .sidebar-navigation ul li:hover {
-          border-left: 5px solid #2B5FCE; }
+          border-left: 5px solid transparent;
+          background: #eee; }
         .admin-sidebar .sidebar-navigation ul li.active {
           border-left: 5px solid #2B5FCE; }
 
 .main-section {
-  width: calc(100vw - 240px);
   display: flex;
+  width: calc(100vw - 240px);
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -326,15 +350,30 @@ input, textarea {
   padding-top: 40px;
   overflow-y: scroll; }
 
-.container-bars {
+.section-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 10px; }
+  .section-header .section-title {
+    font-size: 28px;
+    color: #2B5FCE;
+    text-align: left; }
+  .section-header button {
+    float: right; }
+
+.content-container-bars {
   width: 100%; }
-  .container-bars ul {
+  .content-container-bars ul {
     width: 100%;
     box-sizing: border-box;
     list-style-position: outside;
     padding: 0;
     list-style-type: none; }
-    .container-bars ul li {
+    .content-container-bars ul li {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -349,10 +388,16 @@ input, textarea {
       border-radius: 3px;
       margin-bottom: 20px;
       padding: 30px; }
-      .container-bars ul li:hover {
+      .content-container-bars ul li:hover {
         transform: translateY(-5px); }
-      .container-bars ul li a {
+      .content-container-bars ul li a {
         color: #333; }
+
+.content-container-cards {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column; }
 
 .homepage-editor-sidebar {
   width: 450px;
@@ -360,38 +405,6 @@ input, textarea {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
   padding-top: 10px;
-  padding-bottom: 100px; }
-
-.homepage-edit-card {
-  border: 1px solid #d1d8e6;
-  border-radius: 5px;
-  padding: 30px;
+  padding-bottom: 100px;
   box-sizing: border-box;
-  margin: 20px; }
-  .homepage-edit-card .card-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    .homepage-edit-card .card-header h2 {
-      font-size: 20px;
-      font-weight: normal;
-      color: #19387a; }
-    .homepage-edit-card .card-header .bx {
-      font-size: 30px;
-      color: #19387a; }
-  .homepage-edit-card.dragging {
-    background: white;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2); }
-  .homepage-edit-card.placeable {
-    background: none;
-    box-shadow: none;
-    border: 1px dashed #d1d8e6;
-    opacity: .8; }
-  .homepage-edit-card.add-new {
-    background: none;
-    box-shadow: none;
-    border: 1px dashed #b0bcd4; }
-  .homepage-edit-card .card-content {
-    margin-top: 20px;
-    margin-bottom: 20px; }
+  padding: 30px; }
