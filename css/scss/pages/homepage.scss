@@ -26,7 +26,13 @@ $homepage-editor-sidebar-width : 450px;
 
     h2{
       font-size: 20px;
+      font-weight: normal;
       color: darken($isomer-blue,20%);
+    }
+
+    .bx{
+        font-size: 30px;
+        color: darken($isomer-blue,20%);
     }
 
   }
