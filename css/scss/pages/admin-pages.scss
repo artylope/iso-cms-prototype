@@ -28,6 +28,10 @@
       &:hover{
         transform: translateY(-5px);
       }
+
+      a{
+        color: $body-text;
+      }
     }
   }
 }

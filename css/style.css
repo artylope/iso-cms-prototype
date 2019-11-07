@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 .page-editor-footer {
   height: 80px;
   background: white;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
   z-index: 10;
@@ -69,6 +69,8 @@ button {
   border: none;
   flex-wrap: nowrap;
   padding: 0; }
+  button:focus {
+    outline: 0; }
   button .bx {
     height: 100%;
     margin-top: 2px; }
@@ -81,13 +83,21 @@ button {
   button.blue {
     background: #2B5FCE;
     color: white;
-    padding: 10px 30px; }
+    padding: 10px 30px;
+    margin-right: 20px; }
     button.blue a {
       text-decoration: none;
       color: white; }
       button.blue a:hover {
         text-decoration: none;
         color: white; }
+  button.disabled {
+    background: #D0D4DB;
+    color: #8892a4;
+    padding: 10px 30px;
+    margin-right: 20px; }
+  button:last-child {
+    margin-right: 0px; }
 
 .button-group-left, .button-group-right {
   display: flex;
@@ -110,13 +120,16 @@ input, textarea {
   border: 1px solid #cccccc;
   padding: 10px;
   box-sizing: border-box; }
+  input:focus, textarea:focus {
+    border: 1px solid #2B5FCE;
+    outline: none; }
 
 .header {
   position: fixed;
   height: 80px;
   background: #fff;
   width: 100%;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5);
   z-index: 100;
   display: flex;
   flex-direction: row;
@@ -127,9 +140,22 @@ input, textarea {
   padding-right: 30px; }
   .header .logo img {
     width: 180px; }
-
-.header-center h1 {
-  font-size: 20px; }
+  .header .header-center {
+    margin: 0 auto;
+    flex-basis: 60%;
+    text-align: center; }
+    .header .header-center h1 {
+      font-size: 20px; }
+  .header .header-left {
+    float: left;
+    flex-basis: 20%; }
+  .header .header-right {
+    float: right;
+    text-align: right;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center; }
 
 /* width */
 /* width */
@@ -325,6 +351,8 @@ input, textarea {
       padding: 30px; }
       .container-bars ul li:hover {
         transform: translateY(-5px); }
+      .container-bars ul li a {
+        color: #333; }
 
 .homepage-editor-sidebar {
   width: 450px;
