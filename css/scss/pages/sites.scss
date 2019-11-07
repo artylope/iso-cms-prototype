@@ -1,5 +1,5 @@
-$site-width: 360px;
-$site-height: 250px;
+$site-width: 320px;
+$site-height: 220px;
 $site-margin-horizontal: 20px;
 $site-margin-vertical: 15px;
 $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
@@ -21,7 +21,7 @@ $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
 
   .section-header{
     width: $sites-container-width;
@@ -55,7 +55,7 @@ $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
         transition: transform 0.2s ease-in;
 
         .site-image{
-          height: 180px;
+          height: 70%;
           width: 100%;
           background: grey;
           border-top-left-radius: 5px;
@@ -64,17 +64,23 @@ $sites-container-width: ($site-width*3) + ($site-margin-horizontal*6);
         }
 
         .site-description{
-          height: 90px;
+          height: 30%;
           width: 100%;
-          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-left: 15px;
 
           .site-name{
+            width: 100%;
             font-size: .9em;
             color: $body-text;
             margin-bottom: 5px;
           }
 
           .site-date{
+            width: 100%;
             font-weight: 300;
             color: $body-grey;
             font-size: .6em;

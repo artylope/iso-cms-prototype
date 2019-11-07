@@ -257,9 +257,9 @@ input, textarea {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 50px; }
+  margin-top: 30px; }
   .sites-container .section-header {
-    width: 1200px;
+    width: 1080px;
     margin-left: 40px; }
   .sites-container .sites {
     display: flex;
@@ -267,7 +267,7 @@ input, textarea {
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 1200px; }
+    width: 1080px; }
     .sites-container .sites .site-container {
       box-sizing: border-box;
       display: flex;
@@ -279,8 +279,8 @@ input, textarea {
         margin-right: 20px;
         margin-top: 15px;
         margin-bottom: 15px;
-        height: 250px;
-        width: 360px;
+        height: 220px;
+        width: 320px;
         border-radius: 5px;
         background: white;
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
@@ -288,20 +288,26 @@ input, textarea {
         box-sizing: border-box;
         transition: transform 0.2s ease-in; }
         .sites-container .sites .site-container .site .site-image {
-          height: 180px;
+          height: 70%;
           width: 100%;
           background: grey;
           border-top-left-radius: 5px;
           border-top-right-radius: 5px; }
         .sites-container .sites .site-container .site .site-description {
-          height: 90px;
+          height: 30%;
           width: 100%;
-          padding: 20px; }
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-left: 15px; }
           .sites-container .sites .site-container .site .site-description .site-name {
+            width: 100%;
             font-size: .9em;
             color: #333;
             margin-bottom: 5px; }
           .sites-container .sites .site-container .site .site-description .site-date {
+            width: 100%;
             font-weight: 300;
             color: #878787;
             font-size: .6em; }
@@ -312,8 +318,8 @@ input, textarea {
         margin-right: 20px;
         margin-top: 15px;
         margin-bottom: 15px;
-        height: 250px;
-        width: 360px;
+        height: 220px;
+        width: 320px;
         border-radius: 5px;
         border: 1px dashed #2B5FCE;
         box-sizing: border-box;
