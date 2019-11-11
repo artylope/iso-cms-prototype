@@ -483,36 +483,48 @@ input, textarea {
       .content-container-boxes .boxes-container .card:nth-child(3n) {
         margin-right: 0; }
 
-.card.resource .resource-title {
-  font-size: 16px;
-  margin-bottom: 2px; }
-
-.card.resource .resource-category {
-  text-transform: uppercase;
-  color: grey;
-  font-size: 12px;
-  letter-spacing: .5px;
-  margin-bottom: 14px; }
-
-.card.resource .resource-date {
-  color: grey;
-  font-size: 12px;
-  margin-top: -1px; }
-
-.card.resource .resource-type {
-  color: grey;
-  text-transform: uppercase;
-  font-size: 12px; }
-
-.card.resource .resource-updated {
-  color: grey;
-  font-size: 12px; }
-
-.card.resource .bx {
-  font-size: 20px; }
-
-.card.resource:hover {
-  transform: translateY(-5px); }
+.card.resource {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center; }
+  .card.resource .resource-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center; }
+    .card.resource .resource-info .resource-title {
+      font-size: 16px;
+      margin-bottom: 2px; }
+    .card.resource .resource-info .resource-category {
+      text-transform: uppercase;
+      color: grey;
+      font-size: 12px;
+      letter-spacing: .5px;
+      margin-bottom: 14px; }
+    .card.resource .resource-info .resource-date {
+      color: grey;
+      font-size: 12px;
+      margin-top: -1px; }
+    .card.resource .resource-info .resource-type {
+      color: grey;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 0; }
+    .card.resource .resource-info .resource-updated {
+      color: grey;
+      font-size: 12px;
+      margin-top: 0;
+      margin-bottom: 0; }
+  .card.resource .resource-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end; }
+    .card.resource .resource-icon .bx {
+      font-size: 20px; }
+  .card.resource:hover {
+    transform: translateY(-5px); }
 
 .homepage-editor-sidebar {
   width: 450px;
