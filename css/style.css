@@ -432,7 +432,7 @@ input, textarea {
     list-style-type: none; }
     .content-container-bars ul li {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: space-between;
       background: white;
@@ -445,9 +445,12 @@ input, textarea {
       border-radius: 3px;
       margin-bottom: 20px;
       padding: 30px; }
+      .content-container-bars ul li .bx {
+        font-size: 20px; }
       .content-container-bars ul li:hover {
         transform: translateY(-5px); }
       .content-container-bars ul li a {
+        width: 100%;
         color: #333; }
 
 .content-container-cards {
