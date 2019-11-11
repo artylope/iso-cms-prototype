@@ -97,15 +97,17 @@
 
 $resource-card-height: 200px;
 $resource-card-margin: 2.5%;
-$resource-card-width: (100% - 5 )/3 ;
+$resource-card-width: (100% - ($resource-card-margin*2) )/3 ;
 
 .content-container-boxes{
   //this is used in the resources page
   width: 100%;
+
   display: flex;
   box-sizing: border-box;
   flex-direction: row;
   flex-wrap: wrap;
+
 
   .boxes-container{
     width: 100%;
@@ -126,5 +128,48 @@ $resource-card-width: (100% - 5 )/3 ;
         }
       }
 
+  }
+}
+
+.card{
+  &.resource{
+
+    .resource-title{
+      font-size: 16px;
+      margin-bottom: 2px;
+    }
+
+    .resource-category{
+      text-transform: uppercase;
+      color: grey;
+      font-size: 12px;
+      letter-spacing: .5px;
+      margin-bottom: 14px;
+    }
+
+    .resource-date{
+      color: grey;
+      font-size: 12px;
+      margin-top: -1px;
+    }
+
+    .resource-type{
+      color: grey;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .resource-updated{
+      color: grey;
+      font-size: 12px;
+    }
+
+    .bx{
+      font-size: 20px;
+    }
+
+    &:hover{
+      transform: translateY(-5px);
+    }
   }
 }
