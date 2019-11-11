@@ -74,7 +74,6 @@
   }
 }
 
-$resource-card-gutter: 3%;
 
 .content-container-cards{
   //this is used in the setting page
@@ -85,9 +84,8 @@ $resource-card-gutter: 3%;
   flex-wrap: wrap;
 
   .card-container{
-    flex: 1 0 calc(25% - 20px);
+    // flex: 1 0 calc(25% - 20px);
     margin: 10px;
-
 
     .card{
       box-sizing: border-box;
@@ -96,6 +94,37 @@ $resource-card-gutter: 3%;
   }
 }
 
+
+$resource-card-height: 200px;
+$resource-card-margin: 2.5%;
+$resource-card-width: (100% - 5 )/3 ;
+
 .content-container-boxes{
   //this is used in the resources page
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .boxes-container{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+      .card{
+        width: $resource-card-width;
+        box-sizing: border-box;
+        height: $resource-card-height;
+        margin-right: $resource-card-margin;
+        margin-bottom: $resource-card-margin;
+
+        &:nth-child(3n){
+           margin-right: 0;
+        }
+      }
+
+  }
 }

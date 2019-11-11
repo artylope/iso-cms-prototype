@@ -44,6 +44,28 @@
     background: none;
     box-shadow: none;
     border: 1px dashed darken($base-background-light, 20%);
+
+    border: 1px dashed $isomer-blue;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $isomer-blue;
+
+    .bx-plus-circle{
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    h2{
+      font-size: 18px;
+    }
+
+    &:hover{
+      background-color: rgba(255,255,255,0.5);
+      border: 1px dashed $isomer-blue;
+    }
   }
 
   .card-content{

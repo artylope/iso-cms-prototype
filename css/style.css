@@ -175,7 +175,22 @@ input, textarea {
   .card.add-new {
     background: none;
     box-shadow: none;
-    border: 1px dashed #b0bcd4; }
+    border: 1px dashed #b0bcd4;
+    border: 1px dashed #2B5FCE;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2B5FCE; }
+    .card.add-new .bx-plus-circle {
+      font-size: 30px;
+      margin-bottom: 20px; }
+    .card.add-new h2 {
+      font-size: 18px; }
+    .card.add-new:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 1px dashed #2B5FCE; }
   .card .card-content {
     margin-top: 20px;
     margin-bottom: 20px; }
@@ -442,11 +457,31 @@ input, textarea {
   flex-direction: row;
   flex-wrap: wrap; }
   .content-container-cards .card-container {
-    flex: 1 0 calc(25% - 20px);
     margin: 10px; }
     .content-container-cards .card-container .card {
       box-sizing: border-box;
       height: 200px; }
+
+.content-container-boxes {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .content-container-boxes .boxes-container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .content-container-boxes .boxes-container .card {
+      width: 31.6666666667%;
+      box-sizing: border-box;
+      height: 200px;
+      margin-right: 2.5%;
+      margin-bottom: 2.5%; }
+      .content-container-boxes .boxes-container .card:nth-child(3n) {
+        margin-right: 0; }
 
 .homepage-editor-sidebar {
   width: 450px;
