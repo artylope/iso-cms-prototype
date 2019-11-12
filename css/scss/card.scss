@@ -43,7 +43,6 @@
   &.add-new{
     background: none;
     box-shadow: none;
-    border: 1px dashed darken($base-background-light, 20%);
 
     border: 1px dashed $isomer-blue;
     box-sizing: border-box;
@@ -60,6 +59,8 @@
 
     h2{
       font-size: 18px;
+      width: 100%;
+      text-align: center;
     }
 
     &:hover{
